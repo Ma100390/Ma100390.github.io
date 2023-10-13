@@ -17,7 +17,7 @@
   top: 0;
   left: 0;
   width: 80%;
-  height: auto;
+  height: 50%;
   background-color: rgba(88, 136, 207, 0.5);
   color: #fff;
   padding: 5% 2% 5% 5%; 
@@ -30,13 +30,13 @@
 p {
   animation: slide-in 3s ease-out;
   color: #00d2b5;
-  font-size: 3vw; /* Modifica la dimensione del testo con unità di misura relative basate sulla larghezza del contenitore */
+  font-size: 1.8vw; /* Modifica la dimensione del testo con unità di misura relative basate sulla larghezza del contenitore */
 }
 h3 {
-  font-size: 3vw; /* Modifica la dimensione del testo con unità di misura relative basate sulla larghezza del contenitore */
+  font-size: 2.5vw; /* Modifica la dimensione del testo con unità di misura relative basate sulla larghezza del contenitore */
 }
 h4 {
-  font-size: 3vw; /* Modifica la dimensione del testo con unità di misura relative basate sulla larghezza del contenitore */
+  font-size: 2vw; /* Modifica la dimensione del testo con unità di misura relative basate sulla larghezza del contenitore */
 }
 
 @keyframes slide-in {
