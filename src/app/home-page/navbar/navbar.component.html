@@ -1,0 +1,66 @@
+<nav class="navbar">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  <div class="logo">
+    <a href="#"><img class="designer-logo" src="assets/Designer2.png" alt="Designer"></a>
+ </div> 
+  <ul class="nav-links">
+    <li><a href="#" (click)="onMenuClick()">Home</a></li>
+    <li class="dropdown">
+      <a (click)="onProductClick()" [style.color]="isProductClicked ? 'red' : ''">Product</a>
+      <div class="dropdown-content">
+        <a *ngFor="let category of categories.slice(0, 10)" (click)="onCategorySelected(category)">
+          {{ category.charAt(0).toUpperCase() + category.slice(1).toLowerCase() }}
+        </a>
+      </div>
+    </li>
+    <li><a (click)="onContactClick()">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+
+
+
+<div *ngIf="showProdotti">
+  <div *ngFor="let product of products; let i = index" class="product-card">
+
+    <div class="image-container">
+      <img [src]="product.images[0]" alt="{{ product.title }}">
+    </div>
+    <div class="product-info">
+      <h3>{{ product.title }}</h3>
+      <p class="price">Prezzo: {{ product.price }} €</p>
+      <p>Sconto: {{ product.discountPercentage }}%</p>
+      <p>Rating medio: {{ product.rating }} su 5</p>
+      <p>Pz: {{ product.stock }}</p>
+      <button (click)="showLightbox(product)">Informazioni</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div *ngIf="lightboxOpen" class="lightbox">
+    <div class="lightbox-content">
+
+      <div *ngIf="selectedProduct">
+        <div class="image-container">
+          <img *ngFor="let image of selectedProduct.images" [src]="image" alt="{{ selectedProduct.title }}">
+        </div>
+      </div>
+      <h3>{{ selectedProduct?.title }}</h3>
+      <p>{{ selectedProduct?.description }}</p>
+
+      <button (click)="closeLightbox()">Chiudi</button>
+    </div>
+  </div>
+
+</div>

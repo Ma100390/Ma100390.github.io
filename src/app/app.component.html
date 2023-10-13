@@ -1,0 +1,18 @@
+<!-- Barra di navigazione -->
+<div>
+          <section id="header">
+                    <h1>Benvenuto su TecnoTrendy.com</h1>
+                    <p>Trendy è il tuo punto di riferimento per le ultime tendenze e novità nel mondo.</p>
+          </section>
+          <app-navbar (menuClicked)="toggleMenuComponent()" 
+                      (contactClicked)="toggleDataComponent(); toggleMenuComponent()"
+                      (productClicked)="handleProductClicked()" 
+                      [showProdotti]="showProdottiComponent">
+          </app-navbar>
+</div>
+
+<app-data [showData]="showDataComponent"></app-data>
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>

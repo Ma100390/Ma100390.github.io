@@ -1,0 +1,53 @@
+/* Reset dei margini e dei padding predefiniti */
+body, h2, p, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Stile per il body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Contenitore principale */
+div {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Titolo */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragrafi di testo */
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Elenco numerato */
+ol {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+/* Elementi dell'elenco */
+li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Testo in grassetto */
+strong {
+    font-weight: bold;
+}

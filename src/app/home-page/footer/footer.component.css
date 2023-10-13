@@ -1,0 +1,40 @@
+/* Stile per il footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    z-index: 2; 
+  }
+  
+  /* Stile per la lista nel footer */
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer li {
+    margin-right: 20px;
+    display: inline;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+  }
+  
+  /* Stile al passaggio del mouse sui link */
+  footer a:hover {
+    text-decoration: underline;
+    color: #f39c12; /* Cambia il colore al passaggio del mouse */
+  }
+  
+  /* Stile per il copyright */
+  .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8; /* Opacità leggermente ridotta */
+  }
+  
