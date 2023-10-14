@@ -1,14 +1,17 @@
 .form-control {
   display: block;
-  width: 50%;
+  width: 80%;
 }
 .container{
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 50px;
+  
   margin-right: 50px;
-  padding: 50px;
+  padding: 5% 5% 5% 20%; 
   border: 1px solid black;
   border-radius: 10px;
   background-color: #f2f2f2;
+}
+.btn{
+  margin-top: 1%;
 }

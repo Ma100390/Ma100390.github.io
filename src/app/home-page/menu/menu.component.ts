@@ -12,6 +12,7 @@ export class MenuComponent {
   constructor(private router: Router) { }
 
   navigateToPage2() {
+    console.log('Cliccato il pulsante eventuale lista di altri prodotti');
     this.router.navigate(['/pagina1']);
   }
 }

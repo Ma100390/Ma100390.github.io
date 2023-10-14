@@ -15,9 +15,9 @@
 .video-text {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10%;
   width: 80%;
-  height: 50%;
+  height: 35%;
   background-color: rgba(88, 136, 207, 0.5);
   color: #fff;
   padding: 5% 2% 5% 5%; 
@@ -27,16 +27,16 @@
 }
 
 /* animazione testo */
-p {
+h4 {
   animation: slide-in 3s ease-out;
-  color: #00d2b5;
-  font-size: 1.8vw; /* Modifica la dimensione del testo con unità di misura relative basate sulla larghezza del contenitore */
+  color: #08ffde;
+  font-size: 60%; /* Modifica la dimensione del testo con unità di misura relative basate sulla larghezza del contenitore */
+}
+h2 {
+  font-size: 100%; /* Modifica la dimensione del testo con unità di misura relative basate sulla larghezza del contenitore */
 }
 h3 {
-  font-size: 4.1vw; /* Modifica la dimensione del testo con unità di misura relative basate sulla larghezza del contenitore */
-}
-h4 {
-  font-size: 2vw; /* Modifica la dimensione del testo con unità di misura relative basate sulla larghezza del contenitore */
+  font-size: 60%; /* Modifica la dimensione del testo con unità di misura relative basate sulla larghezza del contenitore */
 }
 
 @keyframes slide-in {
@@ -51,13 +51,13 @@ h4 {
 }
 
 /* Stile del pulsante */
-.video-text .btn {
-  background-color: #00d2b5;
+.video-text .bott {
+  background-color: #08ac96;
   color: white;
   border: none;
   border-radius: 5px;
   margin-top: 1%;
-  padding: 10px 20px;
+  padding: 0.3rem 0.8rem;
   cursor: pointer;
   font-size: 0.9em; /* Modifica la dimensione del testo del pulsante */
 }
