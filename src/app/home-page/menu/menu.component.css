@@ -9,7 +9,7 @@
 }
   @media (max-width: 768px) {
     .main-container {
-      min-height: 15vh; /* Altezza diversa per schermi più piccoli */
+      min-height: 2%; /* Altezza diversa per schermi più piccoli */
       padding: 40px; /* Aggiungi un padding per separare i contenuti sui dispositivi più piccoli */
     }
   }
@@ -18,15 +18,26 @@
   display: flex;
   overflow: hidden;
   animation: carouselAnimation 35s linear infinite;
+  height:fit-content;
 }
-
+@media (max-width: 400px) {
+  .product-carousel img {
+    width: 20%; /* Altezza diversa per schermi più piccoli */
+     /* Aggiungi un padding per separare i contenuti sui dispositivi più piccoli */
+  }
+}
 /* Stile per le immagini all'interno del carosello */
 .product-carousel img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
+@media (max-width: 400px) {
+  .product-carousel img {
+    width: 20%; /* Altezza diversa per schermi più piccoli */
+     /* Aggiungi un padding per separare i contenuti sui dispositivi più piccoli */
+  }
+}
 /* Animazione del carosello */
 @keyframes carouselAnimation {
   0% {
@@ -110,9 +121,86 @@ h3 {
 .video-text .btn:hover {
   background-color: #009c8e;
 }
-@media (max-width: 468px) {
+@media (max-width: 768px) {
+  .main-container {
+    min-height: 15vh;
+    padding: 40px;
+  }
+  .video-container {
+    min-height: 30vh;
+    height: 50px;
+  }
   .video-text {
-    font-size: 1vw; /* Cambia la dimensione del testo in base alla larghezza dello schermo */
+    font-size: 1vw;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.7rem;
+  }
+  h4 {
+    font-size: 0.4rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-container {
+    min-height: 15vh;
+    padding: 40px;
+  }
+  .video-container {
+    min-height: 30vh;
+    height: 50px;
+  }
+  .video-text {
+    font-size: 1vw;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.7rem;
+  }
+  h4 {
+    font-size: 0.4rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-container {
+    min-height: 10vh;
+    padding: 0;
+  }
+  .video-container {
+    min-height: 50px;
+    height: 100%;
+  }
+  .video-text {
+    font-size: 2vw;
+  }
+  h2 {
+    font-size: 100%;
+  }
+  h3 {
+    font-size: 60%;
+  }
+  h4 {
+    font-size: 60%;
+  }
+}
+/* Schermi molto piccoli, ad esempio smartphone in modalità landscape */
+@media (max-width: 320px) {
+  .main-container {
+    min-height: 20vh; /* Altezza diversa per schermi molto piccoli */
+  }
+
+  .video-container {
+    min-height: 40vh; /* Altezza diversa per schermi molto piccoli */
+    height: auto; /* Annulla l'altezza specificata per i dispositivi molto piccoli */
+  }
+
+  .video-text {
+    font-size: 1.5vw; /* Cambia la dimensione del testo in base alla larghezza dello schermo */
   }
 
   h2 {
@@ -120,10 +208,11 @@ h3 {
   }
 
   h3 {
-    font-size: 0.7rem; /* Cambia la dimensione di h3 in base alla larghezza dello schermo */
+    font-size: 0.8rem; /* Cambia la dimensione di h3 in base alla larghezza dello schermo */
   }
 
-h4{
-  font-size: 0.4rem;
+  h4 {
+    font-size: 0.5rem; /* Cambia la dimensione di h4 in base alla larghezza dello schermo */
+  }
 }
-}
+
