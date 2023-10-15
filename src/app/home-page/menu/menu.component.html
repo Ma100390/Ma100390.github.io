@@ -1,14 +1,38 @@
-<div class="video-container" *ngIf="showMenu"  >
+<div class="main-container">
+  <div class="product-carousel">
+    <img src="assets/1.jpg" alt="Descrizione dell'immagine">
+    <img src="assets/2.jpg" alt="Descrizione dell'immagine">
+    <img src="assets/3.jpg" alt="Descrizione dell'immagine">
+    <img src="assets/4.jpg" alt="Descrizione dell'immagine">
+    <img src="assets/5.jpg" alt="Descrizione dell'immagine">
+    <img src="assets/6.jpg" alt="Descrizione dell'immagine">
+    <img src="assets/7.jpg" alt="Descrizione dell'immagine">
+    <img src="assets/8.jpg" alt="Descrizione dell'immagine">
+    
+  </div>
+</div>
+
+<div class="video-container" *ngIf="showMenu">
   <video class="video" autoplay loop>
-    <source src="assets/video.mp4" type="video/mp4">
+    <source src="assets/video.mp4" type="video/mp4" width="1920" height="1080">
     Il tuo browser non supporta il tag video.
   </video>
-
   <div class="video-text">
     <h2>Scopri i nostri prodotti e le nostre schede tecniche</h2>
     <h3>Esplora il futuro della comunicazione con la nostra vasta selezione.</h3>
-    <h4>Dai personal computer potenti alle prestazioni straordinarie, abbiamo tutto ciò di cui hai bisogno per rimanere
-      connesso e aggiornato.</h4>
-    <button class="bott" (click)="navigateToPage2()">"Scopri di più"</button>
+    <h4>Dai personal computer potenti alle prestazioni straordinarie, abbiamo tutto ciò di cui hai bisogno per rimanere connesso e aggiornato.</h4>
+    <button class="btn" (click)="navigateToPage2()">" Scopri di più "</button>
+  </div>
+</div>
+<div class="main-container">
+  <div class="product-carousel">
+    <img src="assets/8.jpg" alt="Descrizione dell'immagine">
+    <img src="assets/6.jpg" alt="Descrizione dell'immagine">
+    <img src="assets/2.jpg" alt="Descrizione dell'immagine">
+    <img src="assets/4.jpg" alt="Descrizione dell'immagine">
+    <img src="assets/5.jpg" alt="Descrizione dell'immagine">
+    <img src="assets/3.jpg" alt="Descrizione dell'immagine">
+    <img src="assets/7.jpg" alt="Descrizione dell'immagine">
+    <img src="assets/1.jpg" alt="Descrizione dell'immagine">
   </div>
 </div>

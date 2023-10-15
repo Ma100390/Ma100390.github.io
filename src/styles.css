@@ -1,8 +1,10 @@
 /* Stile per il contenitore del NavbarComponent */
 /* Reset dei margini e dei padding */
 * {
-    margin: 0;
+  margin: 0 ;
     padding: 0;
     box-sizing: border-box;
     font-size: 100%;
+    
+    
   }

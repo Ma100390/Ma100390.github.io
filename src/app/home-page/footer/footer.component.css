@@ -1,17 +1,13 @@
 /* Stile per il footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    z-index: 2; 
-  }
-  
-  /* Stile per la lista nel footer */
-  footer ul {
-    list-style-type: none;
-    padding: 0;
-  }
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0; /* Riduci il padding verticale */
+  margin: 0; /* Rimuovi il margine che potrebbe causare spazi bianchi */
+  text-align: center;
+  z-index: 2;
+  height: 15vh; /* Riduci l'altezza del footer al 5% dell'altezza della viewport */
+}
   
   footer li {
     margin-right: 20px;
@@ -37,4 +33,10 @@ footer {
     font-size: 14px;
     opacity: 0.8; /* Opacità leggermente ridotta */
   }
-  
+  @media (max-width: 768px) {
+    /* Modifiche specifiche per schermi più piccoli */
+    footer {
+      height: 21vh; /* Altezza ridotta per schermi più piccoli */
+      padding: 55px 0; /* Riduci il padding verticale */
+    }
+  }
