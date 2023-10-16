@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
   @Output() categorySelected: EventEmitter<string> = new EventEmitter<string>();
   @Output() onMenu: EventEmitter<void> = new EventEmitter<void>();
   @Input() showProdotti: boolean = false;
-  
+
   showDetail: boolean = false;
   categories: string[] = [];
   products: Product[] = [];
@@ -22,18 +22,14 @@ export class NavbarComponent implements OnInit {
   selectedProduct: Product | null = null;
   currentImageIndex: number = 0;
   isProductClicked: boolean = false;
+  isContactClicked: boolean = false;
+  isSelectProduct: boolean = false;
 
   constructor(private categorieService: CategorieService) { }
 
-  showPreview(product: Product) {
-    this.showPreviewInfo = true;
-    this.selectedProduct = product;
-  }
+ 
 
-  closePreview() {
-    this.showPreviewInfo = false;
-    this.selectedProduct = null;
-  }
+
 
   showLightbox(product: Product) {
     this.lightboxOpen = true;
@@ -59,11 +55,12 @@ export class NavbarComponent implements OnInit {
     this.categorieService.getProductsByCategory(category).subscribe(products => {
       this.products = products;
     });
+      this.isSelectProduct = false;
   }
 
   onContactClick() {
     this.contactClicked.emit();
-    
+    this.isContactClicked = !this.isContactClicked;
   }
   onMenuClick() {
     // Ritardiamo l'emissione dell'evento onMenu utilizzando setTimeout
@@ -75,5 +72,6 @@ export class NavbarComponent implements OnInit {
   onProductClick() {
     this.productClicked.emit();
     this.isProductClicked = !this.isProductClicked;
-  }
+    this.isSelectProduct = this.isProductClicked;
+}
 }

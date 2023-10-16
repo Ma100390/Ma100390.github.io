@@ -1,42 +1,31 @@
 /* Stile per il contenitore principale */
 .main-container {
+  max-height: 12%; 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  min-height: 10vh;
   overflow: hidden; /* Nasconde il contenuto oltre i limiti del contenitore */
   position: relative;
+  
 }
-  @media (max-width: 768px) {
-    .main-container {
-      min-height: 2%; /* Altezza diversa per schermi più piccoli */
-      padding: 40px; /* Aggiungi un padding per separare i contenuti sui dispositivi più piccoli */
-    }
-  }
+
 /* Stile per il carosello */
 .product-carousel {
   display: flex;
-  overflow: hidden;
+  
   animation: carouselAnimation 35s linear infinite;
-  height:fit-content;
+  
 }
-@media (max-width: 400px) {
-  .product-carousel img {
-    width: 20%; /* Altezza diversa per schermi più piccoli */
-     /* Aggiungi un padding per separare i contenuti sui dispositivi più piccoli */
-  }
-}
+
 /* Stile per le immagini all'interno del carosello */
 .product-carousel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 10%;
+  height:auto;
+  cursor: pointer;
 }
-@media (max-width: 400px) {
-  .product-carousel img {
-    width: 20%; /* Altezza diversa per schermi più piccoli */
-     /* Aggiungi un padding per separare i contenuti sui dispositivi più piccoli */
-  }
+img{
+  margin-left: 80px;
+  margin-right:80px;
 }
 /* Animazione del carosello */
 @keyframes carouselAnimation {
@@ -71,7 +60,7 @@
   top: 0;
   left: 0;
   width: 80%;
-  height: 50%;
+  height: 55%;
   background-color: rgba(88, 136, 207, 0.5);
   color: #fff;
   padding: 5% 2% 5% 5%;
@@ -107,14 +96,14 @@ h3 {
 }
 
 /* Stile del pulsante */
-.video-text .btn {
+.video-text .btnn {
   background-color: #00d2b5;
   color: white;
   border: none;
   border-radius: 5px;
   margin-top: 1%;
   padding: 10px 20px;
-  cursor: pointer;
+  cursor: no-drop;
   font-size: 0.9rem;
 }
 
@@ -123,12 +112,24 @@ h3 {
 }
 @media (max-width: 768px) {
   .main-container {
-    min-height: 15vh;
-    padding: 40px;
+    max-height: 12%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Nasconde il contenuto oltre i limiti del contenitore */
+    position: relative;
+  }
+  .product-carousel img {
+    width: 20%;
+    height:auto;
+  }
+  img{
+    margin-left: 10px;
+    margin-right:10px;
   }
   .video-container {
-    min-height: 30vh;
-    height: 50px;
+    max-height: 10vh;
+    height: 20px;
   }
   .video-text {
     font-size: 1vw;
@@ -143,28 +144,7 @@ h3 {
     font-size: 0.4rem;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
-  .main-container {
-    min-height: 15vh;
-    padding: 40px;
-  }
-  .video-container {
-    min-height: 30vh;
-    height: 50px;
-  }
-  .video-text {
-    font-size: 1vw;
-  }
-  h2 {
-    font-size: 1rem;
-  }
-  h3 {
-    font-size: 0.7rem;
-  }
-  h4 {
-    font-size: 0.4rem;
-  }
-}
+
 
 @media (min-width: 1025px) {
   .main-container {

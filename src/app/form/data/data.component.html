@@ -1,10 +1,12 @@
 
 
 <div class="form-container" *ngIf="showData">
+  
   <div *ngIf="submit" class="alert alert-success mt-3">
     Messaggio inviato! Grazie per averci contattato.
   </div>
   <form (ngSubmit)="onSubmit()" class="container" #formData="ngForm">
+    <h3>Form contact</h3>
     <div class="form-group">
       <label for="name">Nome:</label>
       <input type="text" id="name" [(ngModel)]="nome" name="nome" class="form-control" required minlength="2">

@@ -1,21 +1,17 @@
 /* Stile per la sezione del header */
 #header {
-  background-color: #bdd9fd;
-  color: hsl(231, 51%, 16%); 
+  background-color: #4C5656;
+  color: hsl(0, 0%, 100%); 
   padding: 10px; 
   text-align: center; 
 }
 
 /* Stile per il titolo */
 #header h1 {
-  font-size: 36px; /* Un po' più grande */
-  font-weight: bold;
-  font-family: 'Mooli', sans-serif;
-  color: #333; /* Colore del testo */
-  text-align: center; /* Allineamento al centro */
-  text-transform: uppercase; /* Trasformazione in maiuscolo */
-  margin-bottom: 20px; /* Spazio inferiore per separarlo dal testo sottostante */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombra leggera */
+  font-size: 36px;
+  color: #C6FF79; /* Testo bianco */
+  font-family: 'Arial', sans-serif;
+  text-align: center;
 }
 
 

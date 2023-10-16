@@ -34,15 +34,17 @@ footer a:hover {
   opacity: 0.8; /* Opacità leggermente ridotta */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   /* Modifiche specifiche per schermi più piccoli */
   footer {
-    height: 21vh; /* Altezza ridotta per schermi più piccoli */
-    padding: 55px 0; /* Riduci il padding verticale */
+    height: 20vh; /* Altezza ridotta per schermi più piccoli */
+    padding: 35px 0; /* Riduci il padding verticale */
   }
-  
-  footer li {
-    display: block; /* Visualizza gli elementi della lista in colonne */
-    margin-right: 0; /* Rimuovi il margine tra gli elementi */
+  a {
+    margin-right: 15%;
+  }
+  footer ul {
+     
+    margin-right: 10px; /* Rimuovi il margine tra gli elementi */
   }
 }

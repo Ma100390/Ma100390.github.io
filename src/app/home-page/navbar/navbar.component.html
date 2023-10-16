@@ -4,18 +4,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
   <div class="logo">
     <a href="#"><img class="designer-logo" src="assets/Designer2.png" alt="Designer"></a>
- </div> 
+  </div>
   <ul class="nav-links">
     <li><a href="#" (click)="onMenuClick()">Home</a></li>
     <li class="dropdown">
-      <a (click)="onProductClick()" [style.color]="isProductClicked ? 'red' : ''">Product</a>
-      <div class="dropdown-content">
+      <a (click)="onProductClick()" [style.color]="isProductClicked ? '#C2FF79' : ''">Product</a>
+      <div class="dropdown-content" *ngIf="!isSelectProduct">
         <a *ngFor="let category of categories.slice(0, 10)" (click)="onCategorySelected(category)">
           {{ category.charAt(0).toUpperCase() + category.slice(1).toLowerCase() }}
         </a>
       </div>
     </li>
-    <li><a (click)="onContactClick()">Contact</a></li>
+    <li><a (click)="onContactClick()" [style.color]="isContactClicked ? '#C2FF79' : ''">Contact</a></li>
   </ul>
 </nav>
 
@@ -36,7 +36,7 @@
       <p>Sconto: {{ product.discountPercentage }}%</p>
       <p>Rating medio: {{ product.rating }} su 5</p>
       <p>Pz: {{ product.stock }}</p>
-      <button (click)="showLightbox(product)">Informazioni</button>
+      <button class="btn btn-info" (click)="showLightbox(product)">Informazioni</button>
     </div>
   </div>
 
@@ -59,7 +59,7 @@
       <h3>{{ selectedProduct?.title }}</h3>
       <p>{{ selectedProduct?.description }}</p>
 
-      <button (click)="closeLightbox()">Chiudi</button>
+      <button class="btn btn-danger" (click)="closeLightbox()">Chiudi</button>
     </div>
   </div>
 
