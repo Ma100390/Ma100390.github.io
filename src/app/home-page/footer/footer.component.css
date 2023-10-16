@@ -34,7 +34,7 @@ footer a:hover {
   opacity: 0.8; /* Opacità leggermente ridotta */
 }
 
-@media (max-width: 668px) {
+@media (max-width: 768px) {
   /* Modifiche specifiche per schermi più piccoli */
   footer {
     height: 20vh; /* Altezza ridotta per schermi più piccoli */
