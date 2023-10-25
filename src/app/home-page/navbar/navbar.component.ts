@@ -63,10 +63,10 @@ export class NavbarComponent implements OnInit {
     this.isContactClicked = !this.isContactClicked;
   }
   onMenuClick() {
-    // Ritardiamo l'emissione dell'evento onMenu utilizzando setTimeout
+   
     setTimeout(() => {
       this.onMenu.emit();
-    }, 1000); // Emetti l'evento dopo 1000 millisecondi (1 secondo)
+    }, 1000); 
   }
 
   onProductClick() {

@@ -2,49 +2,41 @@
 footer {
   background-color: #333;
   color: #fff;
-  padding: 10px 0; /* Riduci il padding verticale */
-  margin: 0; /* Rimuovi il margine che potrebbe causare spazi bianchi */
+  padding: 10px 0;
+  margin: 0;
   text-align: center;
   z-index: 2;
-  height: 15vh; /* Riduci l'altezza del footer al 15% dell'altezza della viewport */
+  height: 15vh; 
 }
-
 footer li {
   margin-right: 20px;
   display: inline;
 }
-
 footer a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
   transition: color 0.3s ease-in-out; 
 }
-
-/* Stile al passaggio del mouse sui link */
 footer a:hover {
   text-decoration: underline;
-  color: #f39c12; /* Cambia il colore al passaggio del mouse */
+  color: #f39c12;
 }
-
-/* Stile per il copyright */
 .copyright {
   margin-top: 20px;
   font-size: 14px;
-  opacity: 0.8; /* Opacità leggermente ridotta */
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
-  /* Modifiche specifiche per schermi più piccoli */
   footer {
-    height: 20vh; /* Altezza ridotta per schermi più piccoli */
-    padding: 35px 0; /* Riduci il padding verticale */
+    height: 20vh; 
+    padding: 35px 0; 
   }
   a {
     margin-right: 15%;
   }
   footer ul {
-     
-    margin-right: 10px; /* Rimuovi il margine tra gli elementi */
+    margin-right: 10px;
   }
 }

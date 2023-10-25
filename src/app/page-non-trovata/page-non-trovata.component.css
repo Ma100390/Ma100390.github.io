@@ -1,0 +1,9 @@
+.page-not-found {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .page-not-found h1 {
+    font-size: 2rem;
+    color: #FF0000; /* Rosso per indicare un errore */
+  }

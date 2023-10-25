@@ -18,29 +18,26 @@ export class AppComponent {
 
   onCategorySelected(category: string) {
     this.selectedCategory = category;
-
     this.categorieService.getProductsByCategory(category).subscribe(products => {
       this.products = products;
-      console.log('Prodotti ottenuti per la categoria:', category, this.products); // Aggiunto console.log
+      console.log('Prodotti ottenuti per la categoria:', category, this.products);
     });
   }
   onProductClicked() {
-    // Quando un prodotto viene cliccato, nascondi i prodotti impostando showProdottiComponent su false
     this.showProdottiComponent = false;
   }
 
-
   toggleDataComponent() {
     this.showDataComponent = !this.showDataComponent;
-    console.log('Stato di showDataComponent:', this.showDataComponent); // Aggiunto console.log
+    console.log('Stato di showDataComponent:', this.showDataComponent);
   }
 
   toggleMenuComponent() {
     this.showMenuComponent = !this.showMenuComponent;
-    console.log('Stato di showMenuComponent:', this.showMenuComponent); // Aggiunto console.log
+    console.log('Stato di showMenuComponent:', this.showMenuComponent); 
   }
   handleProductClicked() {
-    this.showProdottiComponent = !this.showProdottiComponent; // Inverte il valore
+    this.showProdottiComponent = !this.showProdottiComponent; 
   }
   
 }
